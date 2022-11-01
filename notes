@@ -1,0 +1,9 @@
+1578 total milliseconds - english but error
+
+11592 total milliseconds - standard no error
+
+8184 total milliseconds - english no error
+ 
+mvn exec:java -Dexec.mainClass="cranfield.IndexFiles" -Dexec.args="-index index -docs Files/cran.all.1400 -queries Files/cran.qry -score 3 -args_path Files/"
+
+./trec_eval ~/Desktop/WebSearch/cs7is3-cranfield-search-assignment/Lucene-Information-Retrieval-1/Files/QRelsCorrectedforTRECeval  ~/Desktop/WebSearch/cs7is3-cranfield-search-assignment/Lucene-Information-Retrieval-1/Files/outputs.txt
