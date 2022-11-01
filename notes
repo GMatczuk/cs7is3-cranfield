@@ -7,3 +7,27 @@
 mvn exec:java -Dexec.mainClass="cranfield.IndexFiles" -Dexec.args="-index index -docs Files/cran.all.1400 -queries Files/cran.qry -score 3 -args_path Files/"
 
 ./trec_eval ~/Desktop/WebSearch/cs7is3-cranfield-search-assignment/Lucene-Information-Retrieval-1/Files/QRelsCorrectedforTRECeval  ~/Desktop/WebSearch/cs7is3-cranfield-search-assignment/Lucene-Information-Retrieval-1/Files/outputs.txt
+
+
+order 
+unzip trec_eval
+
+mvn clean install
+
+mvn exec:java -Dexec.mainClass="cranfield.IndexFiles" -Dexec.args="-index index -docs Files/cran.all.1400 -queries Files/cran.qry -score 3 -args_path Files/"
+(mvn exec:java -Dexec.mainClass="IR.IndexFiles" -Dexec.args= "[-index] [-docs] [-queries] [-score] [-args_path]")
+[-args_path] = output location
+score:
+0 for ClassicSimilarity (boolean + vector space)
+1 for BM25Similarity (Gives Best MAP Score)
+2 for BooleanSimilarity
+3 for LMDirichletSimilarity
+4 for LMJelinekMercerSimilarity 
+
+will create output file
+
+cd to trec_eval folder 
+./trec_eval ~/Desktop/WebSearch/cs7is3-cranfield-search-assignment/Lucene-Information-Retrieval-1/Files/QRelsCorrectedforTRECeval  ~/Desktop/WebSearch/cs7is3-cranfield-search-assignment/Lucene-Information-Retrieval-1/Files/outputs.txt
+(correct location path to correct one for wherever the folders are)
+
+will run trec eval using the first file linked against the second file linked (corrected Qrels against output)
