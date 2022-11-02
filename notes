@@ -27,7 +27,7 @@ score:
 will create output file
 
 cd to trec_eval folder 
-./trec_eval ~/Desktop/WebSearch/cs7is3-cranfield-search-assignment/Lucene-Information-Retrieval-1/Files/QRelsCorrectedforTRECeval  ~/Desktop/WebSearch/cs7is3-cranfield-search-assignment/Lucene-Information-Retrieval-1/Files/outputs.txt
+ ./trec_eval ~/cs7is3-cranfield/Files/QRelsCorrectedforTRECeval  ~/cs7is3-cranfield/Files/outputs.txt    
 (correct location path to correct one for wherever the folders are)
 
 will run trec eval using the first file linked against the second file linked (corrected Qrels against output)
